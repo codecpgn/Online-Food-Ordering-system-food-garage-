@@ -1,0 +1,127 @@
+/* Featured.module.css */
+
+.fcontainer {
+  background-color: #2e2d2d;
+
+  height: calc(110vh );
+  display: flex;
+
+  margin: 20px 0px 0px 0px;
+}
+
+.text {
+  color: red;
+}
+
+.fitem:nth-child(1) {
+  flex: 1;
+  position: relative;
+  background-color: rgb(38, 39, 39);
+}
+
+.fitem:nth-child(2) {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.texth1 {
+  color: rgb(245, 116, 10);
+}
+
+.cards {
+  display: flex;
+  padding: 20px 20px;
+  justify-content: center;
+  align-items: center;
+  height:500px;
+  flex-wrap: wrap;
+}
+
+.under {
+  color: #fff;
+}
+
+.hr {
+  border-bottom: 0.4px solid white;
+  width: 90%;
+}
+
+.ulitem {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+.list {
+  list-style-type: none;
+}
+.ulitem2 {
+  display: flex;
+  justify-content: center;
+}
+
+.social {
+  padding: 0px 20px;
+}
+
+.list1 {
+  display: flex;
+  align-items: center;
+  background-color: red;
+  padding: 10px 70px;
+}
+
+.imges {
+  object-fit: contain;
+}
+
+.card {
+  width: 240px;
+}
+
+.texth2 {
+  color: rgb(194, 175, 6);
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+
+.texth2:hover {
+  color: aqua;
+}
+
+@media (max-width: 960px) {
+  .fitem:nth-child(1) {
+    background-color: red;
+
+    display: none;
+  }
+
+  .fcontainer {
+    display: grid;
+    height: 500px;
+  }
+
+  .cards {
+    display: flex;
+    width: 540px;
+    margin: auto;
+  }
+
+  .under {
+    position: relative;
+
+    top: 150px;
+  }
+
+  .ulitem {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hr {
+    border-bottom: 0.4px solid white;
+    width: 50%;
+  }
+}
